@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight, Package } from "lucide-react";
 
 export default function SuccessPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] grid-bg flex items-center justify-center px-6">
+    <div className="min-h-screen bg-[#f6f7fb] grid-bg flex items-center justify-center px-6">
       <div className="text-center max-w-lg">
         {/* Success icon */}
         <div className="relative inline-block mb-8">
@@ -19,20 +19,20 @@ export default function SuccessPage() {
           <div className="h-px w-8 bg-[#22c55e]" />
         </div>
 
-        <h1 className="text-5xl font-black text-white mb-4">
+        <h1 className="text-5xl font-black text-[#1f2933] mb-4">
           ORDER
           <br />
           <span className="text-[#22c55e]">CONFIRMED</span>
         </h1>
 
-        <p className="text-[#555] text-sm leading-relaxed mb-4">
+        <p className="text-[#6b7280] text-sm leading-relaxed mb-4">
           Your fidget tools are queued for printing. We will send you a confirmation email with tracking information once your order ships.
         </p>
 
-        <div className="bg-[#111] border border-[#1a1a1a] p-6 mb-8 text-left">
+        <div className="bg-white border border-[#e2e8f0] p-6 mb-8 text-left">
           <div className="flex items-center gap-3 mb-4">
-            <Package size={16} className="text-[#f97316]" />
-            <span className="text-white font-bold text-xs tracking-wider uppercase">What Happens Next</span>
+            <Package size={16} className="text-[#008060]" />
+            <span className="text-[#1f2933] font-bold text-xs tracking-wider uppercase">What Happens Next</span>
           </div>
           <ul className="space-y-3">
             {[
@@ -41,8 +41,8 @@ export default function SuccessPage() {
               "Packaged and shipped within 3 business days",
               "Tracking number sent to your email",
             ].map((step, i) => (
-              <li key={i} className="flex items-start gap-3 text-xs text-[#555]">
-                <span className="text-[#f97316] font-bold flex-shrink-0">{String(i + 1).padStart(2, "0")}.</span>
+              <li key={i} className="flex items-start gap-3 text-xs text-[#6b7280]">
+                <span className="text-[#008060] font-bold flex-shrink-0">{String(i + 1).padStart(2, "0")}.</span>
                 {step}
               </li>
             ))}

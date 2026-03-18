@@ -60,8 +60,8 @@ export async function POST(req: NextRequest) {
     longDescription: String(body.longDescription),
     category: String(body.category || "other"),
     tags: Array.isArray(body.tags) ? body.tags.map(String) : [],
-    color: String(body.color || "#111111"),
-    accentColor: String(body.accentColor || "#f97316"),
+    color: String(body.color || "#f8fafc"),
+    accentColor: String(body.accentColor || "#008060"),
     inStock: body.inStock !== false,
     featured: body.featured === true,
   };

@@ -6,7 +6,7 @@ export default function NewsletterForm() {
       <input
         type="email"
         placeholder="YOUR@EMAIL.COM"
-        className="flex-1 bg-[#0a0a0a] border border-[#222] px-4 py-3 text-sm text-white placeholder-[#333] focus:outline-none focus:border-[#f97316] tracking-wider"
+        className="flex-1 bg-white border border-[#e2e8f0] px-4 py-3 text-sm text-[#1f2933] placeholder-[#94a3b8] focus:outline-none focus:border-[#008060] tracking-wider"
       />
       <button type="submit" className="btn-primary" style={{ clipPath: "none" }}>
         SUBSCRIBE

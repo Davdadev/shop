@@ -44,13 +44,13 @@ export default function CartPage() {
 
   if (items.length === 0) {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
+      <div className="min-h-screen bg-[#f6f7fb] flex items-center justify-center">
         <div className="text-center">
-          <div className="text-8xl mb-6 text-[#1a1a1a]">
+          <div className="text-8xl mb-6 text-[#e2e8f0]">
             <ShoppingBag size={80} className="mx-auto" />
           </div>
-          <h1 className="text-3xl font-black text-white mb-2">CART IS EMPTY</h1>
-          <p className="text-[#555] text-sm mb-8">Nothing here yet. Go find something satisfying.</p>
+          <h1 className="text-3xl font-black text-[#1f2933] mb-2">CART IS EMPTY</h1>
+          <p className="text-[#6b7280] text-sm mb-8">Nothing here yet. Go find something satisfying.</p>
           <Link href="/shop" className="btn-primary inline-flex items-center gap-2">
             BROWSE SHOP <ArrowRight size={14} />
           </Link>
@@ -64,23 +64,23 @@ export default function CartPage() {
   const orderTotal = subtotal + shipping;
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-[#f6f7fb]">
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-16">
         <div className="flex items-center gap-4 mb-12">
           <Link
             href="/shop"
-            className="text-[#555] hover:text-white transition-colors"
+            className="text-[#6b7280] hover:text-[#1f2933] transition-colors"
           >
             <ArrowLeft size={18} />
           </Link>
           <div>
             <div className="flex items-center gap-3 mb-1">
               <div className="accent-line w-8" />
-              <span className="text-[#f97316] text-xs tracking-[0.3em] uppercase">
+              <span className="text-[#008060] text-xs tracking-[0.3em] uppercase">
                 {items.length} item{items.length !== 1 ? "s" : ""}
               </span>
             </div>
-            <h1 className="text-4xl font-black text-white">YOUR CART</h1>
+            <h1 className="text-4xl font-black text-[#1f2933]">YOUR CART</h1>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function CartPage() {
             ))}
             <button
               onClick={clearCart}
-              className="mt-6 text-[#333] hover:text-[#f97316] text-xs tracking-widest uppercase transition-colors"
+              className="mt-6 text-[#94a3b8] hover:text-[#008060] text-xs tracking-widest uppercase transition-colors"
             >
               CLEAR CART
             </button>
@@ -100,22 +100,22 @@ export default function CartPage() {
 
           {/* Order Summary */}
           <div>
-            <div className="bg-[#111] border border-[#1a1a1a] p-8 sticky top-28">
-              <h2 className="text-white font-bold tracking-wider text-sm uppercase mb-6 pb-4 border-b border-[#1a1a1a]">
+            <div className="bg-white border border-[#e2e8f0] p-8 sticky top-28">
+              <h2 className="text-[#1f2933] font-bold tracking-wider text-sm uppercase mb-6 pb-4 border-b border-[#e2e8f0]">
                 ORDER SUMMARY
               </h2>
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#555]">Subtotal</span>
-                  <span className="text-white">${subtotal.toFixed(2)}</span>
+                  <span className="text-[#6b7280]">Subtotal</span>
+                  <span className="text-[#1f2933]">${subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#555]">Shipping</span>
-                  <span className="text-white">${shipping.toFixed(2)}</span>
+                  <span className="text-[#6b7280]">Shipping</span>
+                  <span className="text-[#1f2933]">${shipping.toFixed(2)}</span>
                 </div>
-                <div className="border-t border-[#1a1a1a] pt-3 flex justify-between">
-                  <span className="text-white font-bold text-sm tracking-wider uppercase">Total</span>
-                  <span className="text-[#f97316] font-black text-xl">${orderTotal.toFixed(2)}</span>
+                <div className="border-t border-[#e2e8f0] pt-3 flex justify-between">
+                  <span className="text-[#1f2933] font-bold text-sm tracking-wider uppercase">Total</span>
+                  <span className="text-[#008060] font-black text-xl">${orderTotal.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ export default function CartPage() {
                 )}
               </button>
 
-              <p className="text-[#333] text-[10px] tracking-wider text-center mt-4">
+              <p className="text-[#94a3b8] text-[10px] tracking-wider text-center mt-4">
                 SECURED BY STRIPE · SSL ENCRYPTED
               </p>
             </div>

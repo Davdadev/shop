@@ -22,8 +22,8 @@ export default function HomePage() {
         {/* Big background text */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
           <span
-            className="text-[20vw] font-black tracking-tighter text-white"
-            style={{ opacity: 0.015 }}
+            className="text-[20vw] font-black tracking-tighter text-[#1f2933]"
+            style={{ opacity: 0.04 }}
           >
             FIDGET
           </span>
@@ -32,16 +32,16 @@ export default function HomePage() {
         {/* Animated geometric shapes */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div
-            className="absolute top-1/4 right-1/4 w-64 h-64 border border-[#f97316] rotate-45"
-            style={{ opacity: 0.04 }}
+            className="absolute top-1/4 right-1/4 w-64 h-64 border border-[#008060] rotate-45"
+            style={{ opacity: 0.06 }}
           />
           <div
-            className="absolute top-1/3 right-1/3 w-32 h-32 border border-[#f97316] rotate-[22.5deg]"
-            style={{ opacity: 0.07 }}
+            className="absolute top-1/3 right-1/3 w-32 h-32 border border-[#008060] rotate-[22.5deg]"
+            style={{ opacity: 0.12 }}
           />
           <div
-            className="absolute bottom-1/4 left-1/4 w-48 h-48 border border-[#f97316] rotate-12"
-            style={{ opacity: 0.04 }}
+            className="absolute bottom-1/4 left-1/4 w-48 h-48 border border-[#008060] rotate-12"
+            style={{ opacity: 0.06 }}
           />
         </div>
 
@@ -50,38 +50,38 @@ export default function HomePage() {
           className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden lg:block"
           style={{ perspective: "600px" }}
         >
-          <div className="spinner-3d relative w-40 h-40">
-            {/* Cube faces */}
-            <div className="absolute inset-0 border-2 border-[#f97316] bg-[#f97316]/5" style={{ transform: "translateZ(70px)" }} />
-            <div className="absolute inset-0 border-2 border-[#f97316] bg-[#f97316]/5" style={{ transform: "translateZ(-70px)" }} />
-            <div className="absolute inset-0 border-2 border-[#f97316]/50 bg-[#f97316]/3" style={{ transform: "rotateY(90deg) translateZ(70px)" }} />
-            <div className="absolute inset-0 border-2 border-[#f97316]/50 bg-[#f97316]/3" style={{ transform: "rotateY(-90deg) translateZ(70px)" }} />
-            {/* Center dot */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#f97316] rounded-full glow-pulse" />
+            <div className="spinner-3d relative w-40 h-40">
+              {/* Cube faces */}
+              <div className="absolute inset-0 border-2 border-[#008060] bg-[#008060]/5" style={{ transform: "translateZ(70px)" }} />
+              <div className="absolute inset-0 border-2 border-[#008060] bg-[#008060]/5" style={{ transform: "translateZ(-70px)" }} />
+              <div className="absolute inset-0 border-2 border-[#008060]/40 bg-[#008060]/3" style={{ transform: "rotateY(90deg) translateZ(70px)" }} />
+              <div className="absolute inset-0 border-2 border-[#008060]/40 bg-[#008060]/3" style={{ transform: "rotateY(-90deg) translateZ(70px)" }} />
+              {/* Center dot */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#008060] rounded-full glow-pulse" />
+            </div>
           </div>
-        </div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
               <div className="accent-line w-12" />
-              <span className="text-[#f97316] text-xs tracking-[0.3em] uppercase font-bold">
+              <span className="text-[#008060] text-xs tracking-[0.3em] uppercase font-bold">
                 3D Printed · Precision Engineered
               </span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] mb-8">
+            <h1 className="text-6xl md:text-8xl font-black text-[#1f2933] leading-[0.9] mb-8">
               FOCUS
               <br />
-              <span className="text-[#f97316]">THROUGH</span>
+              <span className="text-[#008060]">THROUGH</span>
               <br />
               YOUR
               <br />
               HANDS
             </h1>
 
-            <p className="text-[#888] text-lg max-w-md leading-relaxed mb-10">
+            <p className="text-[#64748b] text-lg max-w-md leading-relaxed mb-10">
               Every piece precision engineered on a real 3D printer. 
               Not mass produced. Not generic. Built for makers, by a maker.
             </p>
@@ -96,15 +96,15 @@ export default function HomePage() {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-8 mt-16 pt-8 border-t border-[#1a1a1a]">
+            <div className="flex gap-8 mt-16 pt-8 border-t border-[#e2e8f0]">
               {[
                 { num: "6", label: "Products" },
                 { num: "100%", label: "3D Printed" },
                 { num: "∞", label: "Satisfaction" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="text-3xl font-black text-[#f97316]">{stat.num}</div>
-                  <div className="text-[#444] text-xs tracking-widest uppercase">{stat.label}</div>
+                  <div className="text-3xl font-black text-[#008060]">{stat.num}</div>
+                  <div className="text-[#64748b] text-xs tracking-widest uppercase">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -118,16 +118,16 @@ export default function HomePage() {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <div className="accent-line w-8" />
-              <span className="text-[#f97316] text-xs tracking-[0.3em] uppercase">Featured</span>
+                <span className="text-[#008060] text-xs tracking-[0.3em] uppercase">Featured</span>
+              </div>
+              <h2 className="text-4xl font-black text-[#1f2933] tracking-tight">
+                TOP PICKS
+              </h2>
             </div>
-            <h2 className="text-4xl font-black text-white tracking-tight">
-              TOP PICKS
-            </h2>
+            <Link href="/shop" className="text-[#008060] text-sm tracking-wider uppercase hover:text-[#1f2933] transition-colors flex items-center gap-2">
+              All Products <ArrowRight size={14} />
+            </Link>
           </div>
-          <Link href="/shop" className="text-[#f97316] text-sm tracking-wider uppercase hover:text-white transition-colors flex items-center gap-2">
-            All Products <ArrowRight size={14} />
-          </Link>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {displayProducts.map((product) => (
@@ -142,11 +142,11 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="h-px w-8 bg-[#f97316]" />
-              <span className="text-[#f97316] text-xs tracking-[0.3em] uppercase">Why Fidgetcraft</span>
-              <div className="h-px w-8 bg-[#f97316]" />
+              <div className="h-px w-8 bg-[#008060]" />
+              <span className="text-[#008060] text-xs tracking-[0.3em] uppercase">Why Fidgetcraft</span>
+              <div className="h-px w-8 bg-[#008060]" />
             </div>
-            <h2 className="text-4xl font-black text-white">THE MAKER DIFFERENCE</h2>
+            <h2 className="text-4xl font-black text-[#1f2933]">THE MAKER DIFFERENCE</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -174,20 +174,20 @@ export default function HomePage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="relative bg-[#111] border border-[#1a1a1a] p-6 group hover:border-[#f97316]/30 transition-colors"
+                className="relative bg-white border border-[#e2e8f0] p-6 group hover:border-[#008060]/40 transition-colors"
               >
                 {/* Number */}
                 <div
-                  className="absolute top-4 right-4 text-5xl font-black text-white"
-                  style={{ opacity: 0.03 }}
+                  className="absolute top-4 right-4 text-5xl font-black text-[#1f2933]"
+                  style={{ opacity: 0.08 }}
                 >
                   0{i + 1}
                 </div>
-                <div className="text-[#f97316] mb-4">{item.icon}</div>
-                <h3 className="text-white font-bold tracking-wider text-sm uppercase mb-2">
+                <div className="text-[#008060] mb-4">{item.icon}</div>
+                <h3 className="text-[#1f2933] font-bold tracking-wider text-sm uppercase mb-2">
                   {item.title}
                 </h3>
-                <p className="text-[#555] text-xs leading-relaxed">{item.desc}</p>
+                <p className="text-[#6b7280] text-xs leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -196,24 +196,24 @@ export default function HomePage() {
 
       {/* Newsletter */}
       <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="relative bg-[#111] border border-[#1a1a1a] p-12 overflow-hidden">
-          <div className="absolute inset-0 grid-bg" />
-          <div
-            className="absolute -right-20 -top-20 w-80 h-80 border border-[#f97316] rotate-45"
-            style={{ opacity: 0.05 }}
-          />
+          <div className="relative bg-white border border-[#e2e8f0] p-12 overflow-hidden">
+            <div className="absolute inset-0 grid-bg" />
+            <div
+              className="absolute -right-20 -top-20 w-80 h-80 border border-[#008060] rotate-45"
+              style={{ opacity: 0.08 }}
+            />
 
-          <div className="relative z-10 max-w-xl">
-            <span className="text-[#f97316] text-xs tracking-[0.3em] uppercase font-bold">
-              Stay in the loop
-            </span>
-            <h2 className="text-3xl font-black text-white mt-2 mb-4">
-              NEW PRINTS EVERY MONTH
-            </h2>
-            <p className="text-[#555] text-sm mb-8">
-              Get early access to new designs, limited runs, and exclusive maker discounts.
-            </p>
-            <NewsletterForm />
+            <div className="relative z-10 max-w-xl">
+              <span className="text-[#008060] text-xs tracking-[0.3em] uppercase font-bold">
+                Stay in the loop
+              </span>
+              <h2 className="text-3xl font-black text-[#1f2933] mt-2 mb-4">
+                NEW PRINTS EVERY MONTH
+              </h2>
+              <p className="text-[#6b7280] text-sm mb-8">
+                Get early access to new designs, limited runs, and exclusive maker discounts.
+              </p>
+              <NewsletterForm />
           </div>
         </div>
       </section>

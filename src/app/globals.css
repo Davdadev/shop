@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0a0a0a;
-  --bg-2: #111111;
-  --accent: #f97316;
-  --accent-dim: #7c3d0c;
-  --text: #f0f0f0;
-  --text-dim: #888888;
-  --border: #222222;
-  --grid-color: rgba(249, 115, 22, 0.05);
+  --bg: #f6f7fb;
+  --bg-2: #ffffff;
+  --accent: #008060;
+  --accent-dim: #00624a;
+  --text: #1f2933;
+  --text-dim: #6b7280;
+  --border: #e2e8f0;
+  --grid-color: rgba(0, 128, 96, 0.08);
 }
 
 * {
@@ -39,7 +39,7 @@ body {
 }
 
 .dot-bg {
-  background-image: radial-gradient(circle, rgba(249, 115, 22, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(0, 128, 96, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -59,8 +59,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.6), 0 0 80px rgba(249, 115, 22, 0.2); }
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 128, 96, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(0, 128, 96, 0.4), 0 0 80px rgba(0, 128, 96, 0.15); }
 }
 
 @keyframes counter {
@@ -87,12 +87,12 @@ body {
 
 .product-card:hover {
   transform: translateY(-6px) rotateX(2deg);
-  box-shadow: 0 20px 60px rgba(249, 115, 22, 0.15), 0 0 0 1px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 128, 96, 0.12), 0 0 0 1px rgba(0, 128, 96, 0.25);
 }
 
 .btn-primary {
   background: var(--accent);
-  color: #000;
+  color: #fff;
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -105,7 +105,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #fb923c;
+  background: #0f9d74;
   transform: translateY(-1px);
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(249, 115, 22, 0.1);
+  background: rgba(0, 128, 96, 0.08);
 }
 
 .accent-line {
@@ -137,7 +137,7 @@ body {
     -45deg,
     transparent,
     transparent 4px,
-    rgba(249, 115, 22, 0.05) 4px,
-    rgba(249, 115, 22, 0.05) 8px
+    rgba(0, 128, 96, 0.06) 4px,
+    rgba(0, 128, 96, 0.06) 8px
   );
 }

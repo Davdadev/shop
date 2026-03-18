@@ -3,7 +3,7 @@ import { XCircle, ArrowLeft, ShoppingCart } from "lucide-react";
 
 export default function CancelPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] grid-bg flex items-center justify-center px-6">
+    <div className="min-h-screen bg-[#f6f7fb] grid-bg flex items-center justify-center px-6">
       <div className="text-center max-w-lg">
         {/* Cancel icon */}
         <div className="relative inline-block mb-8">
@@ -22,13 +22,13 @@ export default function CancelPage() {
           <div className="h-px w-8 bg-[#ef4444]" />
         </div>
 
-        <h1 className="text-5xl font-black text-white mb-4">
+        <h1 className="text-5xl font-black text-[#1f2933] mb-4">
           CHECKOUT
           <br />
           <span className="text-[#ef4444]">CANCELLED</span>
         </h1>
 
-        <p className="text-[#555] text-sm leading-relaxed mb-10">
+        <p className="text-[#6b7280] text-sm leading-relaxed mb-10">
           No worries — your cart is still saved. Head back when you&apos;re ready to complete your order.
         </p>
 
