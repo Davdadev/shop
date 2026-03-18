@@ -14,7 +14,7 @@ interface ProductFormProps {
 const CATEGORIES = ["cubes", "spinners", "wearables", "loops", "chains", "rings", "sliders", "other"];
 
 const ACCENT_COLORS = [
-  { label: "Shopify Green", value: "#008060" },
+  { label: "Teal Green", value: "#008060" },
   { label: "Cyan", value: "#22d3ee" },
   { label: "Green", value: "#22c55e" },
   { label: "Red", value: "#ef4444" },
