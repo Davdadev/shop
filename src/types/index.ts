@@ -9,6 +9,8 @@ export interface Product {
   tags: string[];
   color: string; // CSS color for placeholder image background
   accentColor: string;
+  inStock: boolean;
+  featured: boolean;
 }
 
 export interface CartItem {

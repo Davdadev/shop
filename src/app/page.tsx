@@ -2,10 +2,18 @@ import Link from "next/link";
 import { ArrowRight, Zap, Shield, Package, Star } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import NewsletterForm from "@/components/NewsletterForm";
-import { products } from "@/lib/products";
+import { getAllProducts } from "@/lib/products";
+
+export const dynamic = "force-dynamic";
 
 export default function HomePage() {
-  const featuredProducts = products.slice(0, 3);
+  const allProducts = getAllProducts();
+  const featuredProducts = allProducts.filter((p) => p.featured && p.inStock).slice(0, 3);
+  // Fall back to first 3 in-stock products if no featured ones are set
+  const displayProducts =
+    featuredProducts.length > 0
+      ? featuredProducts
+      : allProducts.filter((p) => p.inStock).slice(0, 3);
 
   return (
     <div>
@@ -122,7 +130,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {featuredProducts.map((product) => (
+          {displayProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

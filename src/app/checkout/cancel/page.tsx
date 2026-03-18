@@ -29,7 +29,7 @@ export default function CancelPage() {
         </h1>
 
         <p className="text-[#555] text-sm leading-relaxed mb-10">
-          No worries — your cart is still saved. Head back when you are ready to complete your order.
+          No worries — your cart is still saved. Head back when you&apos;re ready to complete your order.
         </p>
 
         <div className="flex justify-center gap-4">
