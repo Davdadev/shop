@@ -19,7 +19,7 @@ export default function AdminDashboardPage() {
   const categories = [...new Set(products.map((p) => p.category))];
 
   const stats = [
-    { label: "Total Products", value: totalProducts, icon: Package, accent: "#f97316" },
+    { label: "Total Products", value: totalProducts, icon: Package, accent: "#008060" },
     { label: "In Stock", value: inStock, icon: CheckCircle, accent: "#22c55e" },
     { label: "Out of Stock", value: outOfStock, icon: XCircle, accent: "#ef4444" },
     { label: "Featured", value: featured, icon: TrendingUp, accent: "#22d3ee" },
@@ -97,11 +97,11 @@ export default function AdminDashboardPage() {
                 <span
                   key={cat}
                   className="px-2 py-0.5 text-xs font-semibold uppercase tracking-wider"
-                  style={{
-                    background: "rgba(249,115,22,0.1)",
-                    border: "1px solid rgba(249,115,22,0.2)",
-                    color: "var(--accent)",
-                  }}
+                    style={{
+                      background: "rgba(0,128,96,0.1)",
+                      border: "1px solid rgba(0,128,96,0.2)",
+                      color: "var(--accent)",
+                    }}
                 >
                   {cat}
                 </span>

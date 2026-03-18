@@ -49,8 +49,8 @@ export default function AdminLoginPage() {
           <div
             className="inline-flex items-center justify-center w-14 h-14 mb-4"
             style={{
-              background: "rgba(249,115,22,0.1)",
-              border: "1px solid rgba(249,115,22,0.3)",
+              background: "rgba(0,128,96,0.12)",
+              border: "1px solid rgba(0,128,96,0.3)",
               clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
             }}
           >
@@ -92,7 +92,7 @@ export default function AdminLoginPage() {
                     autoComplete="current-password"
                     className="w-full px-4 py-3 text-sm pr-12 outline-none focus:ring-1"
                     style={{
-                      background: "#0a0a0a",
+                      background: "#ffffff",
                       border: "1px solid var(--border)",
                       color: "var(--text)",
                       fontFamily: "inherit",

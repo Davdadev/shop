@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0a0a0a",
-        "bg-2": "#111111",
-        accent: "#f97316",
-        "accent-dim": "#7c3d0c",
+        bg: "#f6f7fb",
+        "bg-2": "#ffffff",
+        accent: "#008060",
+        "accent-dim": "#00624a",
       },
       fontFamily: {
         sans: ["Space Grotesk", "system-ui", "sans-serif"],

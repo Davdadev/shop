@@ -21,7 +21,7 @@ export default function ShopFilter({ products }: { products: Product[] }) {
     <>
       {/* Filters */}
       <div className="flex items-center gap-4 mb-10 flex-wrap">
-        <div className="flex items-center gap-2 text-[#555]">
+        <div className="flex items-center gap-2 text-[#6b7280]">
           <SlidersHorizontal size={14} />
           <span className="text-xs tracking-widest uppercase">Filter:</span>
         </div>
@@ -31,8 +31,8 @@ export default function ShopFilter({ products }: { products: Product[] }) {
             onClick={() => setActiveCategory(cat)}
             className={`text-xs tracking-widest uppercase px-4 py-2 border transition-all ${
               activeCategory === cat
-                ? "border-[#f97316] text-[#f97316] bg-[#f97316]/10"
-                : "border-[#222] text-[#555] hover:border-[#333] hover:text-[#888]"
+                ? "border-[#008060] text-[#008060] bg-[#008060]/10"
+                : "border-[#e2e8f0] text-[#6b7280] hover:border-[#cbd5e1] hover:text-[#64748b]"
             }`}
           >
             {cat}
@@ -48,7 +48,7 @@ export default function ShopFilter({ products }: { products: Product[] }) {
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-24 text-[#333]">
+        <div className="text-center py-24 text-[#94a3b8]">
           <div className="text-6xl mb-4">∅</div>
           <p className="text-xs tracking-widest uppercase">No products in this category</p>
         </div>

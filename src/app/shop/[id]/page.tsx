@@ -26,12 +26,12 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-[#f6f7fb]">
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-16">
         {/* Back link */}
         <Link
           href="/shop"
-          className="inline-flex items-center gap-2 text-[#555] hover:text-white transition-colors text-xs tracking-widest uppercase mb-12"
+          className="inline-flex items-center gap-2 text-[#6b7280] hover:text-[#1f2933] transition-colors text-xs tracking-widest uppercase mb-12"
         >
           <ArrowLeft size={12} /> Back to Shop
         </Link>
@@ -40,7 +40,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
           {/* Image Area */}
           <div className="relative">
             <div
-              className="relative h-96 lg:h-[500px] overflow-hidden border border-[#1a1a1a]"
+              className="relative h-96 lg:h-[500px] overflow-hidden border border-[#e2e8f0]"
               style={{ backgroundColor: product.color }}
             >
               <div className="absolute inset-0 diagonal-stripe" />
@@ -65,7 +65,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                 <span
                   className="text-xs font-bold tracking-widest px-3 py-2 border"
                   style={{
-                    backgroundColor: "rgba(0,0,0,0.8)",
+                    backgroundColor: "rgba(255,255,255,0.9)",
                     color: product.accentColor,
                     borderColor: `${product.accentColor}33`,
                   }}
@@ -110,15 +110,15 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               >
                 {product.sku}
               </span>
-              <span className="text-[#444] text-[10px] tracking-widest uppercase">
+              <span className="text-[#64748b] text-[10px] tracking-widest uppercase">
                 {product.category}
               </span>
             </div>
 
-            <h1 className="text-5xl font-black text-white tracking-tight mb-2">
+            <h1 className="text-5xl font-black text-[#1f2933] tracking-tight mb-2">
               {product.name}
             </h1>
-            <p className="text-[#555] text-sm mb-6">{product.description}</p>
+            <p className="text-[#6b7280] text-sm mb-6">{product.description}</p>
 
             <div className="accent-line w-16 mb-6" />
 
@@ -126,15 +126,15 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               ${product.price.toFixed(2)}
             </div>
 
-            <p className="text-[#888] text-sm leading-relaxed mb-8">
+            <p className="text-[#64748b] text-sm leading-relaxed mb-8">
               {product.longDescription}
             </p>
 
             {/* Features */}
             <ul className="space-y-3 mb-8">
               {features.map((feature) => (
-                <li key={feature} className="flex items-center gap-3 text-xs text-[#666] tracking-wider">
-                  <CheckCircle size={14} className="text-[#f97316] flex-shrink-0" />
+                <li key={feature} className="flex items-center gap-3 text-xs text-[#64748b] tracking-wider">
+                  <CheckCircle size={14} className="text-[#008060] flex-shrink-0" />
                   {feature}
                 </li>
               ))}
@@ -146,7 +146,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                 <span
                   key={tag}
                   className="text-[10px] tracking-widest uppercase px-3 py-1 border"
-                  style={{ borderColor: "#222", color: "#444" }}
+                  style={{ borderColor: "#e2e8f0", color: "#64748b" }}
                 >
                   #{tag}
                 </span>
@@ -162,7 +162,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         <div className="mt-24">
           <div className="flex items-center gap-4 mb-10">
             <div className="accent-line w-8" />
-            <h2 className="text-2xl font-black text-white tracking-tight">ALSO CONSIDER</h2>
+            <h2 className="text-2xl font-black text-[#1f2933] tracking-tight">ALSO CONSIDER</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {related.map((p) => (

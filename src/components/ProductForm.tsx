@@ -14,24 +14,24 @@ interface ProductFormProps {
 const CATEGORIES = ["cubes", "spinners", "wearables", "loops", "chains", "rings", "sliders", "other"];
 
 const ACCENT_COLORS = [
-  { label: "Orange", value: "#f97316" },
+  { label: "Teal Green", value: "#008060" },
   { label: "Cyan", value: "#22d3ee" },
   { label: "Green", value: "#22c55e" },
   { label: "Red", value: "#ef4444" },
   { label: "Yellow", value: "#eab308" },
   { label: "Purple", value: "#a855f7" },
   { label: "Pink", value: "#ec4899" },
-  { label: "White", value: "#f0f0f0" },
+  { label: "White", value: "#ffffff" },
 ];
 
 const BG_COLORS = [
-  { label: "Dark Blue", value: "#1a1a2e" },
-  { label: "Navy", value: "#0d1b2a" },
-  { label: "Dark Red", value: "#1a0a0a" },
-  { label: "Dark Green", value: "#0a1a0a" },
-  { label: "Dark Gold", value: "#1a1500" },
-  { label: "Dark Purple", value: "#0a0a1a" },
-  { label: "Charcoal", value: "#111111" },
+  { label: "Soft Sky", value: "#e0f2fe" },
+  { label: "Mint", value: "#dcfce7" },
+  { label: "Lavender", value: "#ede9fe" },
+  { label: "Blush", value: "#ffe4e6" },
+  { label: "Sand", value: "#fef3c7" },
+  { label: "Cloud", value: "#f8fafc" },
+  { label: "White", value: "#ffffff" },
 ];
 
 type FormState = {
@@ -57,8 +57,8 @@ function buildFormState(initial?: Partial<Product>): FormState {
     longDescription: initial?.longDescription ?? "",
     category: initial?.category ?? "other",
     tags: initial?.tags?.join(", ") ?? "",
-    color: initial?.color ?? "#111111",
-    accentColor: initial?.accentColor ?? "#f97316",
+    color: initial?.color ?? "#f8fafc",
+    accentColor: initial?.accentColor ?? "#008060",
     inStock: initial?.inStock ?? true,
     featured: initial?.featured ?? false,
   };
@@ -88,7 +88,7 @@ function Field({
 }
 
 const inputStyle = {
-  background: "#0a0a0a",
+  background: "#ffffff",
   border: "1px solid var(--border)",
   color: "var(--text)",
   fontFamily: "inherit",
@@ -413,7 +413,7 @@ export default function ProductForm({ mode, initialValues, productId }: ProductF
             type="checkbox"
             checked={form.inStock}
             onChange={(e) => set("inStock", e.target.checked)}
-            className="w-4 h-4 accent-orange-500"
+            className="w-4 h-4 accent-[#008060]"
           />
           <div>
             <p className="text-sm font-semibold" style={{ color: "var(--text)" }}>In Stock</p>
@@ -428,7 +428,7 @@ export default function ProductForm({ mode, initialValues, productId }: ProductF
             type="checkbox"
             checked={form.featured}
             onChange={(e) => set("featured", e.target.checked)}
-            className="w-4 h-4 accent-orange-500"
+            className="w-4 h-4 accent-[#008060]"
           />
           <div>
             <p className="text-sm font-semibold" style={{ color: "var(--text)" }}>Featured Product</p>

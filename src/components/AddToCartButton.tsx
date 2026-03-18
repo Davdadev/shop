@@ -25,20 +25,20 @@ export default function AddToCartButton({ product }: Props) {
     <div className="space-y-4">
       {/* Quantity selector */}
       <div className="flex items-center gap-4">
-        <span className="text-[#555] text-xs tracking-widest uppercase">Qty:</span>
-        <div className="flex items-center border border-[#222]">
+        <span className="text-[#6b7280] text-xs tracking-widest uppercase">Qty:</span>
+        <div className="flex items-center border border-[#e2e8f0]">
           <button
             onClick={() => setQty(Math.max(1, qty - 1))}
-            className="w-10 h-10 flex items-center justify-center text-[#555] hover:text-white hover:bg-[#1a1a1a] transition-colors"
+            className="w-10 h-10 flex items-center justify-center text-[#6b7280] hover:text-[#1f2933] hover:bg-[#f1f5f9] transition-colors"
           >
             <Minus size={12} />
           </button>
-          <span className="w-12 h-10 flex items-center justify-center text-white font-bold border-x border-[#222]">
+          <span className="w-12 h-10 flex items-center justify-center text-[#1f2933] font-bold border-x border-[#e2e8f0]">
             {qty}
           </span>
           <button
             onClick={() => setQty(qty + 1)}
-            className="w-10 h-10 flex items-center justify-center text-[#555] hover:text-white hover:bg-[#1a1a1a] transition-colors"
+            className="w-10 h-10 flex items-center justify-center text-[#6b7280] hover:text-[#1f2933] hover:bg-[#f1f5f9] transition-colors"
           >
             <Plus size={12} />
           </button>

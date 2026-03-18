@@ -23,7 +23,7 @@ export default function ProductCard({ product }: Props) {
 
   return (
     <Link href={`/shop/${product.id}`} className="block">
-      <div className="product-card bg-[#111] border border-[#1a1a1a] overflow-hidden cursor-pointer group">
+      <div className="product-card bg-white border border-[#e2e8f0] overflow-hidden cursor-pointer group">
         {/* Image placeholder */}
         <div
           className="relative h-52 overflow-hidden"
@@ -61,7 +61,7 @@ export default function ProductCard({ product }: Props) {
             <span
               className="text-[10px] font-bold tracking-widest px-2 py-1"
               style={{
-                backgroundColor: "rgba(0,0,0,0.7)",
+                backgroundColor: "rgba(255,255,255,0.9)",
                 color: product.accentColor,
                 border: `1px solid ${product.accentColor}33`,
               }}
@@ -80,7 +80,7 @@ export default function ProductCard({ product }: Props) {
         {/* Content */}
         <div className="p-5">
           <div className="flex justify-between items-start mb-2">
-            <h3 className="text-white font-bold tracking-wider text-sm uppercase">
+            <h3 className="text-[#1f2933] font-bold tracking-wider text-sm uppercase">
               {product.name}
             </h3>
             <span
@@ -90,7 +90,7 @@ export default function ProductCard({ product }: Props) {
               ${product.price.toFixed(2)}
             </span>
           </div>
-          <p className="text-[#555] text-xs leading-relaxed mb-4">
+          <p className="text-[#6b7280] text-xs leading-relaxed mb-4">
             {product.description}
           </p>
 
@@ -100,7 +100,7 @@ export default function ProductCard({ product }: Props) {
               <span
                 key={tag}
                 className="text-[9px] tracking-widest uppercase px-2 py-0.5 border"
-                style={{ borderColor: "#222", color: "#444" }}
+                style={{ borderColor: "#e2e8f0", color: "#94a3b8" }}
               >
                 {tag}
               </span>

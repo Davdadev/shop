@@ -12,7 +12,7 @@ export default function CartItem({ item }: Props) {
   const { updateQuantity, removeItem } = useCartStore();
 
   return (
-    <div className="flex items-center gap-4 py-6 border-b border-[#1a1a1a] group">
+    <div className="flex items-center gap-4 py-6 border-b border-[#e2e8f0] group">
       {/* Color swatch / image placeholder */}
       <div
         className="w-20 h-20 flex-shrink-0 relative overflow-hidden"
@@ -29,17 +29,17 @@ export default function CartItem({ item }: Props) {
       <div className="flex-1">
         <div className="flex items-start justify-between">
           <div>
-            <p className="text-[#555] text-[10px] tracking-widest uppercase mb-1">
+            <p className="text-[#94a3b8] text-[10px] tracking-widest uppercase mb-1">
               {item.product.sku}
             </p>
-            <h3 className="text-white font-bold tracking-wider text-sm uppercase">
+            <h3 className="text-[#1f2933] font-bold tracking-wider text-sm uppercase">
               {item.product.name}
             </h3>
-            <p className="text-[#555] text-xs mt-1">{item.product.description}</p>
+            <p className="text-[#6b7280] text-xs mt-1">{item.product.description}</p>
           </div>
           <button
             onClick={() => removeItem(item.product.id)}
-            className="text-[#333] hover:text-[#f97316] transition-colors ml-4"
+            className="text-[#94a3b8] hover:text-[#008060] transition-colors ml-4"
           >
             <X size={16} />
           </button>
@@ -47,26 +47,26 @@ export default function CartItem({ item }: Props) {
 
         <div className="flex items-center justify-between mt-4">
           {/* Quantity controls */}
-          <div className="flex items-center border border-[#222]">
+          <div className="flex items-center border border-[#e2e8f0]">
             <button
               onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
-              className="w-8 h-8 flex items-center justify-center text-[#555] hover:text-white hover:bg-[#1a1a1a] transition-colors"
+              className="w-8 h-8 flex items-center justify-center text-[#6b7280] hover:text-[#1f2933] hover:bg-[#f1f5f9] transition-colors"
             >
               <Minus size={12} />
             </button>
-            <span className="w-10 h-8 flex items-center justify-center text-white text-sm font-bold border-x border-[#222]">
+            <span className="w-10 h-8 flex items-center justify-center text-[#1f2933] text-sm font-bold border-x border-[#e2e8f0]">
               {item.quantity}
             </span>
             <button
               onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-              className="w-8 h-8 flex items-center justify-center text-[#555] hover:text-white hover:bg-[#1a1a1a] transition-colors"
+              className="w-8 h-8 flex items-center justify-center text-[#6b7280] hover:text-[#1f2933] hover:bg-[#f1f5f9] transition-colors"
             >
               <Plus size={12} />
             </button>
           </div>
 
           {/* Subtotal */}
-          <span className="text-[#f97316] font-black text-lg">
+          <span className="text-[#008060] font-black text-lg">
             ${(item.product.price * item.quantity).toFixed(2)}
           </span>
         </div>
